@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="CSS.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="CSS/layout_example.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="header">
+                <img src="Images/logo.png" />
+                <%-- <h2>Allinoneweb.net</h2>--%>
+            </div>
+
+            <div class="container">
+                <div class="left">
+                    <p>Left Page</p>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="right">
+                    <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fallinonewebnet%2F273829032821948&amp;width=255&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border: none; overflow: hidden; background-color: white; width: 275px; height: 290px;"
+                        allowtransparency="true"></iframe>
+                    <p>Right Page</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Footer</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
